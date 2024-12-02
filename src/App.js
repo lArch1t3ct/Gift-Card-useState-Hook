@@ -11,6 +11,7 @@ export default function App() {
     }
   );
 
+
   function spendGiftCard() {
     setGiftCard( (prevState) => {
       return {
@@ -21,6 +22,16 @@ export default function App() {
       }
     } );
   }
+
+    /*
+    In order to use implicit return the following code could be used:
+    setGiftCard( (prevState) => ({
+      ...prevState,
+      text: :newTest,
+      valid: :newValid,
+      instructions: :newInstructions
+      }))
+  */
 
   return (
     <div style={{padding: '40px'}}>
